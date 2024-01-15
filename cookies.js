@@ -72,8 +72,8 @@ async function getLoginCookies(initCookie) {
   headers.authorization =
     'JwtApp eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.MmwTuGPzzXKkDFQOX9Gn-Av9YO9J_4Q7LXeXr23js20'
 
-  const username = '15000902575'
-  const password = 'Ge_gezhong132'
+  const username = progress.env.username
+  const password = progress.env.password
   const encryptBody = encrypt(
     JSON.stringify({ username: username, password: password })
   )
